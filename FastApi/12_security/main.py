@@ -18,6 +18,7 @@ from pydantic import BaseModel
 import jwt
 
 
+
 SECURITY_KEY = "drujfidftrg"
 ARGORITHMS = "HS256"
 oauth2_scheme = OAuth2PasswordBearer(tokenUrl="/token") # 这一句目前仍不理解
