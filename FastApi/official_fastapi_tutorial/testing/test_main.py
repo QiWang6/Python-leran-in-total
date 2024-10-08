@@ -4,7 +4,7 @@
 # @Project: Python-leran-in-total
 # @Quelle: https://fastapi.tiangolo.com/tutorial/testing/#fastapi-app-file
 
-
+import uvicorn
 from fastapi.testclient import TestClient
 
 from .main import app
