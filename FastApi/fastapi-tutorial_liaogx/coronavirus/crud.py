@@ -39,3 +39,4 @@ def create_city_data(db: Session, data: schemas.CreateData, city_id: int):
     db.commit()
     db.refresh(db_data)
     return db_data
+
