@@ -4,7 +4,7 @@
 
 from sqlalchemy.orm import Session
 
-from coronavirus import models, schemas
+import models, schemas
 
 
 def get_city(db: Session, city_id: int):
