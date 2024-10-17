@@ -5,7 +5,7 @@
 # @Quelle:
 
 
-from fastapi import APIRouter
+from fastapi import APIRouter, Query
 
 app01 = APIRouter()
 
@@ -14,10 +14,11 @@ app01 = APIRouter()
 
 
 @app01.get("/user/{user_id}")  # 装饰器中的{user_id}
-def get_user(user_id: int):  # 这里需要有同名的位置变量
+def get_user(user_id: int, QueryTest = Query(10, description="测试Query用法")):  # 这里需要有同名的位置变量
     print("user_id", user_id, type(user_id))
     return {
-        "user_id": user_id
+        "user_id": user_id,
+        "Query_Test": QueryTest
     }
 
 
