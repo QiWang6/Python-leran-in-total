@@ -10,7 +10,7 @@ import sys
 p = Path('C:\Python\Heima_pythonProject')
 
 print(p.name)
-pit = p.iterdir() # 返回一个迭代器，包含p下所有文件夹和文件
+pit = p.iterdir()
 print(p.is_file())
 print(p.is_dir())
 
@@ -30,9 +30,8 @@ def generate_tree(pathname, n=0):
 
 
 if __name__ == '__main__':
-    # 命令参数个数为2并且目录存在存在
     if len(sys.argv) == 2 and Path(sys.argv[1]).exists():
         generate_tree(Path(sys.argv[1]), 0)
-    else: # 当前路径
+    else:
         generate_tree(Path.cwd(), 0)
     print(tree_str)
