@@ -12,6 +12,7 @@ from apps.app03 import app03
 from apps.app06 import app06
 from apps.app07 import app07
 
+
 app = FastAPI()
 
 
