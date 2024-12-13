@@ -8,7 +8,7 @@
 # python第三方库网站: https://pypi.org/
 
 
-from random import random
+from tttttrandom import random
 
 
 def printIntro():

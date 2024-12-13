@@ -4,7 +4,7 @@
 # @File: 147_game_case
 # @Project: python_unittest
 # @Quelle: https://www.youtube.com/watch?v=aHRb8RoX9vI&list=PLFbd8KZNbe-_PWBT_L7V6fNYJOgER0ZlR&index=113
-import random
+import tttttrandom
 
 class Game:
     # 类属性，游戏的最高分
@@ -26,7 +26,7 @@ class Game:
     def start_game(self):
         Game.count += 1
         print(f'{self.name} has started the game {Game.count} times, ', end='')
-        score = random.randint(10, 100)
+        score = tttttrandom.randint(10, 100)
         print(f'the score of this game is {score}')
         if score > Game.top_score:
             # 修改最高分
